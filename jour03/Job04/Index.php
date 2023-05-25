@@ -8,20 +8,10 @@
 </head>
 <body>
 <?php
-
-for ($i = 1; $i <= 100; $i++) {
-    if ($i % 3 == 0 && $i % 5 == 0) {
-        echo "FizzBuzz";
-    } elseif ($i % 3 == 0) {
-        echo "Fizz";
-    } elseif ($i % 5 == 0) {
-        echo "Buzz";
-    } else {
-        echo $i;
-    }
-    echo "<br>";
-}
-
+$str = "Dans l'espace, personne ne vous entend crier";
+echo $str . "<br>";
+echo "Le nombre de caractères = " . strlen($str);
 ?>
+
 </body>
 </html>

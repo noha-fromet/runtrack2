@@ -8,10 +8,9 @@
 </head>
 <body>
 <?php
-$str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
-for ($i = 0; $i < strlen($str); $i += 2) {
-    echo $str[$i];
-}
+$str = "Certaines choses changent, et d'autres ne changeront jamais.";
+$new_str = substr($str, 1) . substr($str, 0, 1);
+echo $new_str;
 ?>
 </body>
 </html>

@@ -8,10 +8,19 @@
 </head>
 <body>
 <?php
-$tableau = array('élément1', 'élément2');
-foreach ($tableau as $element) {
-    echo $element . "<br>";
+$numbers = array(200, 204, 173, 98, 171, 404, 459);
+echo "<table>";
+echo "<tr><th>Nombre</th><th>Paire/impaire</th></tr>";
+foreach ($numbers as $number) {
+    echo "<tr><td>$number</td>";
+    if ($number % 2 == 0) {
+        echo "<td>paire</td>";
+    } else {
+        echo "<td>impaire</td>";
+    }
+    echo "</tr>";
 }
+echo "</table>";
 ?>
 </body>
 </html>

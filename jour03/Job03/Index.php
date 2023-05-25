@@ -8,17 +8,12 @@
 </head>
 <body>
 <?php
-for ($i = 0; $i <= 100; $i++) {
-    if ($i == 42) {
-        echo "La Plateforme_";
-    } elseif ($i >= 0 && $i <= 20) {
-        echo "<i>" . $i . "</i>";
-    } elseif ($i >= 25 && $i <= 50) {
-        echo "<u>" . $i . "</u>";
-    } else {
-        echo $i;
+$str = "I'm sorry Dave I'm afraid I can't do that";
+$vowels = array('a', 'e', 'i', 'o', 'u', 'y');
+for ($i = 0; $i < strlen($str); $i++) {
+    if (in_array(strtolower($str[$i]), $vowels)) {
+        echo $str[$i];
     }
-    echo "<br>";
 }
 ?>
 </body>
